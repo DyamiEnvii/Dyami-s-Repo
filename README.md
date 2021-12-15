@@ -43,7 +43,6 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
  What does Metricbeat record? Metricbeat is recording the statics of the files and or logs you have specified for it look. 
 
 The configuration details of each machine may be found below.
-Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
@@ -72,11 +71,11 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-What is the main advantage of automating configuration with Ansible? Main advantage would be being able to copy a master copy of the playbook and copying into the container that you want to run it off of. Making it easy for updating the file if need be and makes the tedious changes easy.
+- Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
+- What is the main advantage of automating configuration with Ansible? Main advantage would be being able to copy a master copy of the playbook and copying into the container that you want to run it off of. Making it easy for updating the file if need be and makes the tedious changes easy.
 
-The playbook implements the following tasks:
-The playbook will first install docker.io on to all webservers that have been underlined in the hosts file. after that it will follow and install the rest python3-pip, and docker module.
+- The playbook implements the following tasks:
+- The playbook will first install docker.io on to all webservers that have been underlined in the hosts file. after that it will follow and install the rest python3-pip, and - docker module.
 - The second task in our playbook will run a systemctl command to insure that the memory that is being used is within a stated amount
 - The third task that is being used in our playbook is installing and elk container with certain ports open allowing for us to get into it after succesful download the playbook
   will run its final task
@@ -105,6 +104,6 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to Kibana<also the public ip address of the elk server:port address that you opened((5601))> to check that the installation worked as expected.
 
 Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it? the playbook to set up elk is elkalicious.yml and you copy this file into the /etc/ansible/directory
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running? In order to check and see if you elk server is up and running you will want to connect to the public ip address of the elk machine in a browser with the open port. so your url should read http://13.77.219.27:5601/app/kibana#/home <this is my url for my machine yours will be different>.
+- Which file is the playbook? Where do you copy it? the playbook to set up elk is elkalicious.yml and you copy this file into the /etc/ansible/directory
+- Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+- Which URL do you navigate to in order to check that the ELK server is running? In order to check and see if you elk server is up and running you will want to connect to the public ip address of the elk machine in a browser with the open port. so your url should read http://13.77.219.27:5601/app/kibana#/home <this is my url for my machine yours will be different>.
