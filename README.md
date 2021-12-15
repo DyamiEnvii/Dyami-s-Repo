@@ -24,7 +24,7 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 Load balancing ensures that the application will be highly accessable, in addition to restricting non-authorized to the network.
 - _TODO: What aspect of security do load balancers protect? Load balancers can protect you against a Ddos attack due to its ability to split the work between two different servers, allowing one to go down and the system will still be running due to the load balancer now turning all the task back on to only one server instead of both.  What is the advantage of a jump box? The advantage of a jumpbox is that you have only one location that can be used to access multiple location this also allows for very good protection for all other locations you may have
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the event logs and system matrix.
 - _TODO: What does Filebeat watch for? Filebeat is watching for a specific logs and specific set of files you have set.
 - _TODO: What does Metricbeat record? Metricbeat is recording the statics of the files and or logs you have specified for it look. 
 
@@ -45,7 +45,7 @@ The machines on the internal network are not exposed to the public Internet.
 Only the jump box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - _TODO: <enter personal public ip address> in order to connect to the machine you will want to set a rule allowing for your own personal public ip address to pass through the firewall
 
-Machines within the network can only be accessed by _____.
+Machines within the network can only be accessed by RedTeam1(Jump Box).
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address? We access the elk vm from the container were we have our ansible-playbooks. For myself this would the first sudo docker container list -a that I would run and grab the tender_liskov and start the machine then attach myself in order to SSH into the ELK machine.
 
 A summary of the access policies in place can be found in the table below.
@@ -86,10 +86,10 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the ansible-playbook file to the designated container.
-- Update the host file to include all webservers that you are requesting as well as uncommenting [webservers] and adding underneath your webservers ip addresses you will be adding a [elk] and the elks IP address. Next to all IP addresses you need to include 
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Update the host file to include all webservers that you are requesting as well as uncommenting [webservers] and adding underneath your webservers ip addresses you will be adding a [elk] and the elks IP address. Next to all IP addresses you need to include ansible_python_interpreter=/usr/bin/python3.
+- Run the playbook, and navigate to Kibana<also the public ip address of the elk server:port address that you opened((5601))> to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
+- _Which file is the playbook? Where do you copy it? the playbook to set up elk is elkalicious.yml and you copy this file into the /etc/ansible/directory
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 - _Which URL do you navigate to in order to check that the ELK server is running? In order to check and see if you elk server is up and running you will want to connect to the public ip address of the elk machine in a browser with the open port. so your url should read http://13.77.219.27:5601/app/kibana#/home <this is my url for my machine yours will be different>.
