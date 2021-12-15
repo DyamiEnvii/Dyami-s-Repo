@@ -6,14 +6,14 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the **yaml** file may be used to install only certain pieces of it, such as Filebeat.
 
-  [playbook0](Ansible/elkalicous.yml)
-  [playbook1](Ansible/pentest.yml)
-  [playbook2](Ansible/ansbile-cfg.yml)
-  [playbook3](Ansible/hosts.yml)
-  [playbook4](Ansible/filebeat-playbook.yml)
-  [playbook5](Ansible/filebeat-config.yml)
-  [playbook6](Ansible/metricbeat-playbook.yml)
-  [playbook7](Ansible/MetricbeatConfig.yml)
+  [Elkalicous](Ansible/elkalicous.yml)
+  [pentest](Ansible/pentest.yml)
+  [ansible-cfg](Ansible/ansbile-cfg.yml)
+  [hosts](Ansible/hosts.yml)
+  [Filebeat-playbook](Ansible/filebeat-playbook.yml)
+  [filebeat-config](Ansible/filebeat-config.yml)
+  [metricbeat-palybook](Ansible/metricbeat-playbook.yml)
+  [metricbeat-config](Ansible/MetricbeatConfig.yml)
 
 This document contains the following details:
 - Description of the Topologu
