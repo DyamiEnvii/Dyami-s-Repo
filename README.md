@@ -108,6 +108,7 @@ Answer the following questions to fill in the blanks:_
 - Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
 - Which URL do you navigate to in order to check that the ELK server is running? In order to check and see if you elk server is up and running you will want to connect to the public ip address of the elk machine in a browser with the open port. so your url should read http://13.77.219.27:5601/app/kibana#/home <this is my url for my machine yours will be different>.
 
+####  Step by Step from downloading docker to setting up a Playbook
   In order to run this set of dockers you will want to run the commands as follows(this is of course with you having already set up a azure VM;
     sudo apt update
     sudo apt install docker.io
