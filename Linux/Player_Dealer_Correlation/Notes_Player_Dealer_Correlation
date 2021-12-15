@@ -1,0 +1,16 @@
+During my time running my audit on your company I believe I have found two culprits behind your fraud.
+The player Mylie Schmidt seems to be teaming up with Billy Jones to run a very well profiting scam against you.
+I found the coulprits by peering into the files using grep, awk, sed, wc.
+I was using two different scripts at the end;
+#!/bin/sh
+grep "08:00:00 AM" 0315_Dealer_schedule | awk '{print $1,$2,$5,$6}'
+
+#!/bin/bash
+cat $1_Dealer_schedule | awk -F " " '{print $1, $2, '$3','$4'}' | grep "$2"
+ 
+The first script will pull the dealers name at the certain time 
+
+the second script is for the bonus question- you must first run 0312 '11:00:00 PM'( or AM) '$7' '$8'
+
+This felt like a very instense homework as there was so many different ways to find these answers out, and everyone I worked with all came up with different ways for their scripts which was really awesome to see and experince. One stutdent I watched was able
+to pull the information for one time at the same time on accident which was awesome. This really helped me understanding the commands that I was using and how to functionally work a script and where the errors and how the syntax really does matter.  
