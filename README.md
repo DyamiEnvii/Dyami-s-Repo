@@ -77,7 +77,7 @@ The playbook will first install docker.io on to all webservers that have been un
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-[image](Images/Dockerps.PNG)
+![image](Images/Dockerps.PNG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
