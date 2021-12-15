@@ -130,22 +130,22 @@ Answer the following questions to fill in the blanks:_
     When you are in here you are more than welcome to create a playboook, for this exercise we are creating a DVWA(Damn Vulnerable Website App) so this playbook will be for         that.
     Our first step will be nano pentest.yml this will create the playbook.
     the top of your playbook should read something like this
-    ![image](Images/Pentest1.PNG)
+   ![image](Images/Pentest1.PNG)
     This is declaring what you want the playbook to do. So we are Configuring a Web Virtual Machine using Docker
     Our host for this is going to be webservers hence why we uncommented and added the IP addresses
     Last but not least we have become true. Allowing for this entire playbook to come true
-    ![image](Images/DockerUpdate.PNG)
+   ![image](Images/DockerUpdate.PNG)
     This segment is saying we want docker.io to install force it to go through if we do not have it, update the chace yes, name of the process we want and the sate of the           process.
     In the next segment we are installing pip3 which is pulling from a index of python libary that is unable to be carried with python when we install python.
-    ![image](Images/pip3.PNG)
+   ![image](Images/pip3.PNG)
     The next step should speak for its self :)
-    ![image](Images/DockerModule.PNG)
+   ![image](Images/DockerModule.PNG)
     The next step in the playbook is going to start the webserver and open the desired ports you want. this is also where you want to include the most important piece in all of     the ansible-playbook in my opinion. That would be the restart_policy: always. If you do not include this, you will have to always restart the playbook in order for the           webserver to start up instead of starting up when you start up your machine.
-    ![image](Images/DVWA.PNG)
+   ![image](Images/DVWA.PNG)
     The final step in a playbook is making sure that the service is up and running. The first line in this is the name of the service we are running. The second line is the         command we are running. the third is the name of service we are running. and the fourth is what we want to do with the service, do we want it enabled or disbaled.
-    ![image](Images/service.PNG)
+   ![image](Images/service.PNG)
     Now that we have completed that we are going to run this command; ansible-playbook pentest.yml
     You should get this read(mine is a bit differnt and says OK yours should say changed) the only reason its differnt is because I have ran this before.
-    ![image](Images/Output.PNG)
+   ![image](Images/Output.PNG)
     If you would like to test that the webserver is up an running you can ssh into your PRIVATE Ip address of your webserver. using ssh <username you designated>@<private ip address>
   Congrats you have successfully set up a webserver, playbook, configure file, and a host file.
