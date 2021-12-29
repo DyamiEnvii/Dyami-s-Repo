@@ -55,7 +55,7 @@ Your client has asked that you help identify any vulnerabilities with their file
 - Bonus command to output results into a new text file named `zenmapscan.txt`:
 	nmap -T4 -A -v -oN zenmapscan.txt 192.168.0.10 
 	
-	![commandtotxt](main/Images/CommandtoTxt.PNG)
+	![commandtotxt](https://github.com/DyamiEnvii/Dyami-s-Repo/blob/main/Images/CommandtoTxt.PNG)
 
 - Zenmap vulnerability script command:
 	you would want to run the nmap --script smb-enum-shares 192.168.0.10
