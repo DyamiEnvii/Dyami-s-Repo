@@ -49,7 +49,7 @@ Your client has asked that you help identify any vulnerabilities with their file
 	sudo zenmap to open zenmap. then you will select the type of profile(Type of Scan levels)
 	and then set the Target parameters to the domain or the ip address, you want to scan. then in the command line use it as a command line for nmap
 	nmap -T4 -A -v is running an intense sacn on the target you have selected.
-	![image](Images/ZenMapScans.PNG)
+	![image](Images/ZenMapScans.png)
  
 - Bonus command to output results into a new text file named `zenmapscan.txt`:
 	nmap -T4 -A -v -oN zenmapscan.txt 192.168.0.10 
