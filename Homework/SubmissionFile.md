@@ -31,11 +31,11 @@ Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the 
 	the open ports for this are 80.443.8080
 #### Step 4: Recon-ng
 
-- Install the Recon module `xssed`.
+- Install the Recon module `xssed`:
 	marketplace install xssed 
-- Set the source to `demo.testfire.net`.
+- Set the source to `demo.testfire.net`:
 	options set source demo.testfire.net 
-- Run the module. 
+- Run the module: 
 	run
 
 Is Altoro Mutual vulnerable to XSS: 	
