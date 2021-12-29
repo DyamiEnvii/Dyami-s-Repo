@@ -49,16 +49,19 @@ Your client has asked that you help identify any vulnerabilities with their file
 	sudo zenmap to open zenmap. then you will select the type of profile(Type of Scan levels)
 	and then set the Target parameters to the domain or the ip address, you want to scan. then in the command line use it as a command line for nmap
 	nmap -T4 -A -v is running an intense sacn on the target you have selected.
-	![image](Images/ZenMapScans.png)
+	
+	![zenmapscans](Images/ZenMapScans.png)
  
 - Bonus command to output results into a new text file named `zenmapscan.txt`:
 	nmap -T4 -A -v -oN zenmapscan.txt 192.168.0.10 
-	![image](Images/CommandtoTxt.PNG)
+	
+	![commandtotxt](Images/CommandtoTxt.PNG)
 
 - Zenmap vulnerability script command:
 	you would want to run the nmap --script smb-enum-shares 192.168.0.10
 	little bonus command I wanted to try. nmap -oN Scriptoutput.txt --script smb-enum-shares 192.168.0.10
-	![image](Images/OutputScript.PNG) 
+	
+	![outputscript](Images/OutputScript.PNG) 
 
 - Once you have identified this vulnerability, answer the following questions for your client:
   1. What is the vulnerability:	
